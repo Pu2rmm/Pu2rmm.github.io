@@ -3,64 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bombou! – Política de Privacidade</title>
+<title>AbasteX — Política de Privacidade</title>
 <style>
-  :root { --bg:#EDE0D4; --card:#fffaf5; --text:#3A2E27; --accent:#ff6b5b; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text);
-         font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 48px; }
-  .card { background:var(--card); border-radius:16px; padding:28px 22px;
-          box-shadow:0 2px 12px rgba(58,46,39,.08); }
-  h1 { margin:0 0 4px; font-size:1.8rem; }
-  h1 span { color:var(--accent); }
-  .date { margin:0 0 24px; opacity:.7; font-size:.9rem; }
-  h2 { font-size:1.15rem; margin:28px 0 8px; }
-  ul { padding-left:20px; }
-  a { color:var(--accent); }
+  :root { --fundo: #fffaf0; --texto: #222; --suave: #555; --cor: #b37800; --linha: #e8dcc4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fundo: #161616; --texto: #eee; --suave: #bbb; --cor: #ffb300; --linha: #333; }
+  }
+  body { margin: 0; background: var(--fundo); color: var(--texto);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { color: var(--cor); margin-bottom: 4px; }
+  h2 { margin-top: 32px; border-bottom: 1px solid var(--linha); padding-bottom: 4px; font-size: 1.2em; }
+  .data { color: var(--suave); margin-top: 0; }
+  a { color: var(--cor); }
+  li { margin: 4px 0; }
 </style>
 </head>
 <body>
 <main>
-<div class="card">
-  <h1><span>Bombou!</span> – Política de Privacidade</h1>
-  <p class="date">Última atualização: 12 de outubro de 2026</p>
+<h1>AbasteX — Política de Privacidade</h1>
+<p class="data">Última atualização: 8 de novembro de 2026</p>
 
-  <p>Esta política explica como o aplicativo <strong>Bombou!</strong> (com.pu2rmm.bombou) trata as suas informações. Resumindo: <strong>o Bombou! não coleta, não armazena em servidores e não vende nenhum dado pessoal seu.</strong> Tudo o que você cria fica no seu próprio aparelho.</p>
+<p>O AbasteX é um aplicativo que ajuda a decidir qual combustível compensa, calcular
+quanto dá e quanto custa abastecer e acompanhar o consumo do veículo. Esta política
+explica quais dados o aplicativo usa, para quê, e o que fica com você.</p>
 
-  <h2>1. Dados que o app acessa</h2>
-  <ul>
-    <li><strong>Câmera:</strong> usada somente quando você escolhe tirar uma foto para usar como fundo de uma criação.</li>
-    <li><strong>Fotos e galeria:</strong> usadas somente quando você escolhe uma imagem da galeria como fundo, e para salvar suas criações no álbum "Bombou" do seu aparelho.</li>
-    <li><strong>Armazenamento do app:</strong> uma cópia de cada criação compartilhada é guardada na pasta interna do aplicativo, para aparecer na tela "Minhas criações". Você pode apagar qualquer item por lá, ou todos de uma vez desinstalando o app.</li>
-  </ul>
-  <p>Essas imagens são processadas apenas no seu aparelho e <strong>nunca são enviadas para nós</strong> nem para terceiros pelo aplicativo.</p>
+<p><strong>Resumo:</strong> o AbasteX não pede cadastro, não pede nome, e-mail nem
+telefone. Tudo o que você registra fica guardado no seu próprio celular.</p>
 
-  <h2>2. Compartilhamento</h2>
-  <p>Quando você toca em "Compartilhar", o Bombou! abre o menu de compartilhamento do Android e a imagem vai para o aplicativo que você escolher (por exemplo, o WhatsApp). A partir daí, o uso da imagem segue a política de privacidade desse outro aplicativo.</p>
+<h2>1. Dados que ficam só no seu celular</h2>
+<ul>
+  <li>Veículos cadastrados (nome, tipo, combustível, tanque, consumo, placa e foto, se você colocar).</li>
+  <li>Abastecimentos registrados (data, combustível, litros, valores, quilometragem e posto).</li>
+  <li>Preços digitados e as suas preferências do aplicativo.</li>
+</ul>
+<p>Esses dados ficam guardados no armazenamento do aparelho e não são enviados para nós.
+Se você desinstalar o aplicativo ou apagar os dados dele, eles são apagados.</p>
 
-  <h2>3. Fontes de texto</h2>
-  <p>Algumas fontes usadas no editor podem ser baixadas dos servidores do Google Fonts na primeira vez em que são exibidas. Nesse download, como em qualquer acesso à internet, o seu endereço IP fica visível para o Google. Nenhum conteúdo das suas criações é enviado. Saiba mais na <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.</p>
+<h2>2. Leitura por foto (inteligência artificial)</h2>
+<p>Quando você usa a leitura por foto (bomba, cupom, painel ou placa de preços), a foto
+escolhida é enviada pela internet ao nosso servidor, que a repassa a um serviço de
+inteligência artificial (Claude, da Anthropic) apenas para ler os números da imagem.
+O resultado volta para o aplicativo e é preenchido nos campos.</p>
+<ul>
+  <li>A foto só é enviada quando você toca no botão de leitura por foto.</li>
+  <li>Nós não guardamos as fotos no nosso servidor.</li>
+  <li>O serviço de inteligência artificial trata a imagem conforme a
+      <a href="https://www.anthropic.com/legal/privacy">política de privacidade da Anthropic</a>.</li>
+  <li>Evite fotografar documentos ou informações pessoais que não sejam do abastecimento.</li>
+</ul>
 
-  <h2>4. O que o app não faz</h2>
-  <ul>
-    <li>Não pede cadastro, login, nome, e-mail ou telefone.</li>
-    <li>Não usa ferramentas de rastreamento, análise de uso ou publicidade.</li>
-    <li>Não acessa sua localização nem seus contatos.</li>
-  </ul>
+<h2>3. Câmera e galeria</h2>
+<p>O aplicativo pede acesso à câmera ou à galeria apenas quando você escolhe tirar ou
+escolher uma foto (do veículo ou para a leitura por foto). A foto do veículo fica
+guardada só no seu celular.</p>
 
-  <h2>5. Crianças</h2>
-  <p>O Bombou! não coleta dados de ninguém, incluindo crianças.</p>
+<h2>4. Anúncios</h2>
+<p>A versão gratuita mostra anúncios do <strong>Google AdMob</strong>. Para exibir e
+medir os anúncios, o Google pode coletar dados do aparelho, como o identificador de
+publicidade, endereço IP aproximado e informações de uso dos anúncios. Saiba mais em
+<a href="https://policies.google.com/technologies/ads?hl=pt-BR">Como o Google usa dados em anúncios</a>.
+Você pode redefinir ou desativar a personalização de anúncios nas configurações do
+Android (Google &rsaquo; Anúncios). A versão Pro não mostra anúncios.</p>
 
-  <h2>6. Seus direitos (LGPD)</h2>
-  <p>Como não coletamos dados pessoais, não mantemos nenhuma informação sua que possa ser consultada, corrigida ou excluída. Se tiver qualquer dúvida sobre privacidade, fale com a gente pelo contato abaixo.</p>
+<h2>5. Compras (AbasteX Pro)</h2>
+<p>A assinatura do AbasteX Pro é feita pelo <strong>Google Play</strong>. O pagamento é
+processado pelo Google; nós não recebemos nem guardamos dados de cartão ou de pagamento.
+O aplicativo só recebe a confirmação de que a assinatura está ativa.</p>
 
-  <h2>7. Alterações</h2>
-  <p>Se esta política mudar (por exemplo, se o app passar a ter novos recursos), a versão atualizada será publicada nesta mesma página, com a nova data no topo.</p>
+<h2>6. Backup</h2>
+<p>O backup gera um arquivo (.abastex) com os seus dados e fotos. Você escolhe onde
+salvar ou com quem compartilhar (por exemplo, Google Drive ou WhatsApp). Nós não
+recebemos esse arquivo.</p>
 
-  <h2>8. Contato</h2>
-  <p>E-mail: <a href="mailto:pu2rmm@gmail.com">pu2rmm@gmail.com</a></p>
-</div>
+<h2>7. Compartilhamento</h2>
+<p>Não vendemos nem compartilhamos os seus dados pessoais. Os únicos envios são os
+descritos acima: a foto para a leitura por inteligência artificial, os dados de
+anúncios tratados pelo Google e a assinatura pelo Google Play.</p>
+
+<h2>8. Crianças</h2>
+<p>O AbasteX não é direcionado a menores de 13 anos e não coleta intencionalmente
+dados de crianças.</p>
+
+<h2>9. Seus direitos (LGPD)</h2>
+<p>Como os seus registros ficam no seu celular, você mesmo pode consultar, corrigir ou
+apagar tudo dentro do aplicativo, ou desinstalá-lo. Para dúvidas ou pedidos sobre
+privacidade, fale com a gente pelo contato abaixo.</p>
+
+<h2>10. Mudanças nesta política</h2>
+<p>Esta política pode ser atualizada. A data no topo mostra a última versão.</p>
+
+<h2>11. Contato</h2>
+<p>Rodrigo Elias — Pariquera-Açu/SP<br>
+E-mail: <a href="mailto:pu2rmm@gmail.com">pu2rmm@gmail.com</a></p>
 </main>
 </body>
 </html>
